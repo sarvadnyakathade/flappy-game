@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flappy Night</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <header class="hud">
+        <div class="hud__label">Score</div>
+        <div id="score" class="hud__score">0</div>
+        <div class="hud__label">Best</div>
+        <div id="best-score" class="hud__score">0</div>
+      </header>
+      <canvas id="game" width="360" height="640" aria-label="Flappy Night game"></canvas>
+      <section id="overlay" class="overlay">
+        <h1 class="overlay__title">Flappy Night</h1>
+        <p class="overlay__message">Tap, click, or press Space to flap.</p>
+        <button id="start-button" class="overlay__button">Start</button>
+      </section>
+    </main>
+    <script src="game.js"></script>
+  </body>
+</html>
