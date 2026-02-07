@@ -1,0 +1,28 @@
+{
+  "name": "flappy-night",
+  "version": "1.0.0",
+  "description": "Flappy Bird-inspired mini game.",
+  "main": "electron-main.js",
+  "scripts": {
+    "start": "http-server -c-1 -p 5173",
+    "electron": "electron .",
+    "build:win": "electron-builder --win",
+    "cap:sync": "npx cap sync",
+    "cap:android": "npx cap open android"
+  },
+  "devDependencies": {
+    "electron": "^30.0.8",
+    "electron-builder": "^24.13.3",
+    "http-server": "^14.1.1"
+  },
+  "build": {
+    "appId": "com.example.flappynight",
+    "productName": "Flappy Night",
+    "files": [
+      "index.html",
+      "style.css",
+      "game.js",
+      "electron-main.js"
+    ]
+  }
+}

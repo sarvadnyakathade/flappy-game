@@ -1,0 +1,6 @@
+{
+  "appId": "com.example.flappynight",
+  "appName": "Flappy Night",
+  "webDir": ".",
+  "bundledWebRuntime": false
+}
